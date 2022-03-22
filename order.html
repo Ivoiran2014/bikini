@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/order.css" />
+    <title>BIKINI</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+          Billing address 
+      </div>
+      <form class="form">
+          <div class="input_field">
+              <label>First Name</label>
+              <input type="text" class="input" id="firstName" required>
+          </div>
+
+          <div class="input_field">
+              <label>Last Name</label>
+              <input type="text" class="input" id="secondName" required>
+          </div>
+
+          <div class="input_field">
+              <label>Email</label>
+              <input type="text" class="input" id="email" required>
+          </div>
+
+          <div class="input_field">
+              <label>Password</label>
+              <input type="password" class="input" id="password" required>
+          </div>
+
+          <div class="input_field">
+              <label>Country</label>
+              <select class="custom_select" id="country">
+                  <option value="">France</option>
+                  <option value="">Sweden</option>
+                  <option value="">Mexico</option>
+                  <option value="">Belgium</option>
+                  <option value="">USA</option>
+                  <option value="">UK</option>
+              </select>
+          </div>
+
+          <div class="input_field">
+              <label>City</label>
+              <input type="text" class="input" id="city" required>
+          </div>
+
+          <div class="input_field">
+              <label>Address</label>
+              <textarea class="textarea" id="address" required></textarea>
+          </div>
+
+          <div class="input_field">
+              <label>Phone Number</label>
+              <input type="text" class="input" id="phoneNumber" required>
+          </div>
+
+          <!-- <div class="input_field">
+              <input type="submit" value="NEXT" class="btn">
+          </div> -->
+        </form>
+  </div>
+
+    <div class="card">
+      <form>
+        <h1 class="card__title">Payment Information</h1>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardNumber" class="card__label">Card Number</label
+            ><input
+              type="text"
+              class="card__input card__input--large"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+          </div>
+          <div class="card__col card__chip">
+            <img src="img/chip.svg" alt="chip" />
+          </div>
+        </div>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardExpiry" class="card__label">Expiry Date</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardExpiry"
+              placeholder="xx/xx"
+            />
+          </div>
+          <div class="card__col">
+            <label for="cardCcv" class="card__label">CCV</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardCcv"
+              placeholder="xxx"
+            />
+          </div>
+          <div class="card__col card__brand"><i id="cardBrand"></i></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="shop-card">
+      <div class="title">
+        BIKINI
+      </div>
+      <div class="disc">
+        Discount Edition
+      </div>
+  
+      <div class="slider">
+        <figure class="data-color="#E249938, #A30F22">
+          <img class="image-source" src="images/model010.jpg" alt="alternatives">
+        </figure>
+      </div>
+      
+      <div class="cta">
+        <div class="price">2€</div>
+        <button class="btn" id="payButton">Pay Now <span class="bg"/></button>
+      </div>
+  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
+    <script src="./javascript/orderStyle.js"></script>
+    <script src="./javascript/formvalidation.js"></script>
+    <script type="module" src="./javascript/cardValidation.js"></script>
+    <!-- <script type="module" src="./javascript/database.js"></script> -->
+  </html>

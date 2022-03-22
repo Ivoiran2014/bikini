@@ -1,0 +1,139 @@
+body,
+html {
+  color: #363636;
+  font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+div {
+  display: block;
+}
+
+html > * {
+  font-size: 16px;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+.Purchase-Header {
+  background: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.Purchase-Header .Purchase-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.Purchase-container {
+  margin: 0 auto;
+  max-width: 1182px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.promo-progress-bar {
+  background: #333;
+  padding: 10px 0;
+}
+
+.promo-progress-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 92%;
+}
+
+.promo-progress-bar .member-label {
+  color: #fff;
+  flex: 0 0 20%;
+  font-size: 14px;
+  margin: auto 0;
+  max-width: 20%;
+  margin-left: 50%;
+}
+
+.promo-progress-bar .progress-bar-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.promo-progress-bar .progress-bar-container.three-step .step-title {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.promo-progress-bar .progress-bar-container .step-title {
+  color: #7d7d7d;
+  font-size: 12px;
+  margin: auto 0;
+  padding: 0 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-progress-bar .progress-bar-container.three-step .step-title {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.promo-progress-bar .progress-bar-container .step-title {
+  color: #7d7d7d;
+  font-size: 12px;
+  margin: auto 0;
+  padding: 0 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar {
+  background: #fff;
+  border-radius: 4px;
+  height: 8px;
+  margin-top: 6px;
+  position: relative;
+  width: 100%;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar .step {
+  background-color: #fff;
+  height: 12px;
+  position: absolute;
+  top: -2px;
+  width: 2px;
+  z-index: 1;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar.three-step .step-1 {
+  left: 17%;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar.three-step .step-2 {
+  left: 50%;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar.three-step .step-3 {
+  left: 83%;
+}
+
+.promo-progress-bar .progress-bar-container .progress-bar .progress-fill {
+  background: #f2018a;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  height: 8px;
+  position: absolute;
+}

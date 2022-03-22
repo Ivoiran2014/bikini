@@ -1,0 +1,69 @@
+/* VARIABLES */
+:root {
+  --bg-color: #f0f0f0;
+  --txt-color: #221e22;
+  --yellow: #e29f01;
+  --white: #fff;
+  --black: #000;
+}
+
+/* SELECTORS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body,
+html {
+  position: relative;
+  overflow: hidden;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(11, 202, 11);
+  font-size: 400;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  background-image: url("../img/resec.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(77, 70, 70, 0.8);
+  z-index: 1;
+} */
+
+.contained {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  padding: 0%;
+  /* margin: 1%; */
+}
+
+.check {
+  height: 200px;
+  width: 200px;
+}
+
+.piccontainer {
+  position: absolute;
+  left: 44%;
+  top: 30%;
+}
